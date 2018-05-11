@@ -127,7 +127,7 @@
       "label": "Openstack Network 1 Id",
       "description": "Generated",
       "type": "string",
-      "default": "network1",
+      "default": "5bf5431a-d781-41f0-a0fd-0604d649bdd4",
       "validation": "",
       "required": true,
       "secured": false,
