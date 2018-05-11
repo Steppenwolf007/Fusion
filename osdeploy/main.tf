@@ -8,13 +8,7 @@ terraform {
   required_version = "> 0.8.0"
 }
 
-provider "openstack" {
-  user_name   = "${var.openstack_user_name}"
-  password    = "${var.openstack_password}"
-  tenant_name = "${var.openstack_project_name}"
-  domain_name = "${var.openstack_domain_name}"
-  auth_url    = "${var.openstack_auth_url}"
-  region      = "${var.openstack_region}"
+provider "OpenStack" {
   insecure    = true
   version = "~> 1.2"
 }
