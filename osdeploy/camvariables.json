@@ -62,7 +62,7 @@
       "label": "Openstack Auth Url",
       "description": "Generated",
       "type": "string",
-      "default": "https://oscontroller.ibmcloud.com:35357/v3",
+      "default": "http://oscontroller.ibmcloud.com:35357/v3",
       "validation": "",
       "required": true,
       "secured": false,
