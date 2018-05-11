@@ -4,59 +4,6 @@
   "output_namespace": "",
   "input_groups": [ ],
   "output_groups": [ ],
-  "template_input_params": [
-    {
-      "name": "nova_name",
-      "label": "Nova Name",
-      "description": "Generated",
-      "type": "string",
-      "default": "",
-      "validation": "",
-      "required": true,
-      "secured": false,
-      "hidden": false,
-      "immutable": false,
-      "immutable_after_create": false
-    },
-    {
-      "name": "openstack_image_name",
-      "label": "Openstack Image Name",
-      "description": "Generated",
-      "type": "string",
-      "default": "",
-      "validation": "",
-      "required": true,
-      "secured": false,
-      "hidden": false,
-      "immutable": false,
-      "immutable_after_create": false
-    },
-    {
-      "name": "openstack_flavor_name",
-      "label": "Openstack Flavor Name",
-      "description": "Generated",
-      "type": "string",
-      "default": "",
-      "validation": "",
-      "required": true,
-      "secured": false,
-      "hidden": false,
-      "immutable": false,
-      "immutable_after_create": false
-    },
-    {
-      "name": "openstack_os-network_id",
-      "label": "Openstack Os Network Id",
-      "description": "Generated",
-      "type": "string",
-      "default": "",
-      "validation": "",
-      "required": true,
-      "secured": false,
-      "hidden": false,
-      "immutable": false,
-      "immutable_after_create": false
-    }
-  ],
+  "template_input_params": [ ],
   "template_output_params": [ ]
 }
