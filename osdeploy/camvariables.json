@@ -88,7 +88,7 @@
       "label": "Linux Vm Name",
       "description": "Generated",
       "type": "string",
-      "default": "Centos-Don",
+      "default": "",
       "validation": "",
       "required": true,
       "secured": false,
