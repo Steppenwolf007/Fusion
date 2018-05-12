@@ -4,8 +4,6 @@
 ##
 #####################################################################
 
-## REFERENCE {"network1":{"type": "openstack_reference_network"}}
-
 terraform {
   required_version = "> 0.8.0"
 }
