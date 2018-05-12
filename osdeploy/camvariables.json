@@ -123,11 +123,24 @@
       "immutable_after_create": false
     },
     {
-      "name": "openstack_network1_id",
-      "label": "Openstack Network 1 Id",
+      "name": "openstack_network_name",
+      "label": "Openstack Network Name",
       "description": "Generated",
       "type": "string",
-      "default": "5bf5431a-d781-41f0-a0fd-0604d649bdd4",
+      "default": "",
+      "validation": "",
+      "required": true,
+      "secured": false,
+      "hidden": false,
+      "immutable": false,
+      "immutable_after_create": false
+    },
+    {
+      "name": "openstack_keypair_name",
+      "label": "Openstack Keypair Name",
+      "description": "Generated",
+      "type": "string",
+      "default": "",
       "validation": "",
       "required": true,
       "secured": false,
@@ -136,5 +149,12 @@
       "immutable_after_create": false
     }
   ],
-  "template_output_params": [ ]
+  "template_output_params": [  {
+    "name": "Assigned IPV4",
+    "label": "Assigned Ipv 4",
+    "description": "Assigned Ipv 4",
+    "secured": false,
+    "hidden": false,
+    "shortname": ""
+  } ]
 }

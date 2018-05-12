@@ -4,6 +4,8 @@
 ##
 #####################################################################
 
+## REFERENCE {"openstack_network":{"type": "openstack_reference_network"}}
+
 ## REFERENCE {"network1":{"type": "openstack_reference_network"}}
 
 terraform {
@@ -26,18 +28,11 @@ resource "openstack_compute_instance_v2" "LinuxVM" {
   name      = "${var.LinuxVM_name}"
   image_name  = "${var.openstack_image_name}"
   flavor_name = "${var.openstack_flavor_name}"
-  key_pair  = "${openstack_compute_keypair_v2.auth.id}"
+  key_pair  = "${var.openstack_keypair_name}"
   network {
-    uuid = "${var.openstack_network1_id}"
+    name = "${var.openstack_network_name}"
   }
 }
 
-resource "tls_private_key" "ssh" {
-    algorithm = "RSA"
-}
-
-resource "openstack_compute_keypair_v2" "auth" {
-    name = "openstack-temp-public-key"
-    public_key = "${tls_private_key.ssh.public_key_openssh}"
-}
+#
 

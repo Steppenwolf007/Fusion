@@ -49,8 +49,12 @@ variable "openstack_flavor_name" {
   description = "Generated"
 }
 
-variable "openstack_network1_id" {
+variable "openstack_network_name" {
   type = "string"
   description = "Generated"
 }
 
+variable "openstack_keypair_name" {
+  type = "string"
+  description = "Generated"
+}
