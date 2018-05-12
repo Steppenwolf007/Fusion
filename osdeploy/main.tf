@@ -29,7 +29,7 @@ resource "openstack_compute_instance_v2" "LinuxVM" {
     name = "Public_Service" 
     }
   availability_zone = "manage-az"
-  security_groups = {"67854e08-d7ba-42f0-b253-5b81d92c6a2b"]
+  security_groups = ["67854e08-d7ba-42f0-b253-5b81d92c6a2b"]
 }
 #
 
