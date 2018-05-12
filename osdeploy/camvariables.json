@@ -123,19 +123,6 @@
       "immutable_after_create": false
     },
     {
-      "name": "openstack_network_name",
-      "label": "Openstack Network Name",
-      "description": "Generated",
-      "type": "string",
-      "default": "",
-      "validation": "",
-      "required": true,
-      "secured": false,
-      "hidden": false,
-      "immutable": false,
-      "immutable_after_create": false
-    },
-    {
       "name": "openstack_keypair_name",
       "label": "Openstack Keypair Name",
       "description": "Generated",

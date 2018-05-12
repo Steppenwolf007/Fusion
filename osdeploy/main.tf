@@ -4,8 +4,6 @@
 ##
 #####################################################################
 
-## REFERENCE {"openstack_network":{"type": "openstack_reference_network"}}
-
 ## REFERENCE {"network1":{"type": "openstack_reference_network"}}
 
 terraform {
@@ -29,9 +27,6 @@ resource "openstack_compute_instance_v2" "LinuxVM" {
   image_name  = "${var.openstack_image_name}"
   flavor_name = "${var.openstack_flavor_name}"
   key_pair  = "${var.openstack_keypair_name}"
-  network {
-    name = "${var.openstack_network_name}"
-  }
 }
 
 #
